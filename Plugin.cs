@@ -16,7 +16,7 @@ namespace REPOTeamBoosters
     {
         private const string mod_guid    = "EvilCheetah.REPO.TeamBoosters";
         private const string mod_name    = "Team Boosters";
-        private const string mod_version = "1.1.4";
+        private const string mod_version = "1.1.5";
         
         private readonly Harmony harmony = new Harmony(mod_guid);
 
@@ -43,6 +43,11 @@ namespace REPOTeamBoosters
                 Configuration.EnableItemUpgradeMapPlayerCountPatch,
                     () => harmony.PatchAll(typeof(ItemUpgradeMapPlayerCountPatch)),
                     "Map Player Count Upgrade"
+                ),
+                (
+                Configuration.EnableItemUpgradePlayerCrouchRestPatch,
+                    () => harmony.PatchAll(typeof(ItemUpgradePlayerCrouchRestPatch)),
+                    "Player Crouch Rest Upgrade"
                 ),
                 (
                 Configuration.EnableItemUpgradePlayerEnergyPatch,
@@ -82,7 +87,12 @@ namespace REPOTeamBoosters
                 (
                     Configuration.EnableItemUpgradePlayerTumbleLaunchPatch,
                     () => harmony.PatchAll(typeof(ItemUpgradePlayerTumbleLaunchPatch)),
-                    "Player Thumle Lauch Upgrade"
+                    "Player Tumble Launch Upgrade"
+                ),
+                (
+                    Configuration.EnableItemUpgradePlayerTumbleWingsPatch,
+                    () => harmony.PatchAll(typeof(ItemUpgradePlayerTumbleWingsPatch)),
+                    "Player Tumble Wings Upgrade"
                 ),
             };
 

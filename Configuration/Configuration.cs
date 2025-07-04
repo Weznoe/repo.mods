@@ -6,6 +6,7 @@ namespace TeamUpgrades.Configuration
     internal class Configuration
     {
         public static ConfigEntry<bool> EnableItemUpgradeMapPlayerCountPatch;
+        public static ConfigEntry<bool> EnableItemUpgradePlayerCourchRestPatch;
         public static ConfigEntry<bool> EnableItemUpgradePlayerEnergyPatch;
         public static ConfigEntry<bool> EnableItemUpgradePlayerExtraJumpPatch;
         public static ConfigEntry<bool> EnableItemUpgradePlayerGrabRangePatch;
@@ -14,6 +15,7 @@ namespace TeamUpgrades.Configuration
         public static ConfigEntry<bool> EnableItemUpgradePlayerHealthPatch;
         public static ConfigEntry<bool> EnableItemUpgradePlayerSprintSpeedPatch;
         public static ConfigEntry<bool> EnableItemUpgradePlayerTumbleLaunchPatch;
+        public static ConfigEntry<bool> EnableItemUpgradePlayerTumbleWingsPatch;
 
         public static void Init(ConfigFile config)
         {
@@ -24,12 +26,20 @@ namespace TeamUpgrades.Configuration
                 "Enables Team Upgrades for Map Player Count Upgrade"
             );
 
+            EnableItemUpgradePlayerCrouchRestPatch = config.Bind<bool>(
+                "General",
+                "EnableUpgradePlayerCrouchRest",
+                true,
+                "Enables Team Upgrades for Player Crouch Rest Upgrade"
+            );
+
             EnableItemUpgradePlayerEnergyPatch = config.Bind<bool>(
                 "General",
                 "EnableUpgradePlayerEnergy",
                 true,
                 "Enables Team Upgrades for Player Energy Upgrade"
             );
+
 
             EnableItemUpgradePlayerExtraJumpPatch = config.Bind<bool>(
                 "General",
@@ -78,6 +88,13 @@ namespace TeamUpgrades.Configuration
                 "EnableUpgradePlayerTumbleLaunch",
                 true,
                 "Enables Team Upgrades for Player Tumble Launch Upgrade"
+            );
+
+            EnableItemUpgradePlayerTumbleWingsPatch = config.Bind<bool>(
+                "General",
+                "EnableUpgradePlayerWingsLaunch",
+                true,
+                "Enables Team Upgrades for Player Tumble Wings Upgrade"
             );
         }
     }

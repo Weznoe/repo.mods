@@ -5,3 +5,6 @@ managers/
 bundles/
 
 manifest.json
+.vscode/
+*.sln
+

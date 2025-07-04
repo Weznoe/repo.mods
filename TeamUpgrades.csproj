@@ -64,14 +64,16 @@
   <ItemGroup>
     <Compile Include="Configuration\Configuration.cs" />
     <Compile Include="Patches\ItemUpgradeMapPlayerCountPatch.cs" />
+    <Compile Include="Patches\ItemUpgradePlayerCrouchRestPatch.cs" />
     <Compile Include="Patches\ItemUpgradePlayerEnergyPatch.cs" />
     <Compile Include="Patches\ItemUpgradePlayerExtraJumpPatch.cs" />
     <Compile Include="Patches\ItemUpgradePlayerGrabRangePatch.cs" />
     <Compile Include="Patches\ItemUpgradePlayerGrabStrengthPatch.cs" />
     <Compile Include="Patches\ItemUpgradePlayerGrabThrowPatch.cs" />
     <Compile Include="Patches\ItemUpgradePlayerHealthPatch.cs" />
-    <Compile Include="Patches\ItemUpgradePlayerTumbleLaunchPatch.cs" />
     <Compile Include="Patches\ItemUpgradePlayerSprintSpeedPatch.cs" />
+    <Compile Include="Patches\ItemUpgradePlayerTumbleLaunchPatch.cs" />
+    <Compile Include="Patches\ItemUpgradePlayerTumbleWingsPatch.cs" />
     <Compile Include="Plugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
