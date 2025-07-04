@@ -6,7 +6,7 @@ namespace TeamUpgrades.Configuration
     internal class Configuration
     {
         public static ConfigEntry<bool> EnableItemUpgradeMapPlayerCountPatch;
-        public static ConfigEntry<bool> EnableItemUpgradePlayerCourchRestPatch;
+        public static ConfigEntry<bool> EnableItemUpgradePlayerCrouchRestPatch;
         public static ConfigEntry<bool> EnableItemUpgradePlayerEnergyPatch;
         public static ConfigEntry<bool> EnableItemUpgradePlayerExtraJumpPatch;
         public static ConfigEntry<bool> EnableItemUpgradePlayerGrabRangePatch;
