@@ -13,6 +13,8 @@ namespace REPOTeamBoosters.Patches
             {
                 PunManager.instance.UpgradeMapPlayerCount(SemiFunc.PlayerGetSteamID(player));
             }
+            SemiFunc.StatSyncAll();
+
 
             return false;
         }

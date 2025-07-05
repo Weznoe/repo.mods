@@ -13,6 +13,7 @@ namespace REPOTeamBoosters.Patches
             {
                 PunManager.instance.UpgradePlayerTumbleWings(SemiFunc.PlayerGetSteamID(player));
             }
+            SemiFunc.StatSyncAll();
 
             return false;
         }

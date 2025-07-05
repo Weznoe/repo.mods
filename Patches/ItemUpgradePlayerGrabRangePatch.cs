@@ -13,6 +13,7 @@ namespace TeamUpgrades.Patches
             {
                 PunManager.instance.UpgradePlayerGrabRange(SemiFunc.PlayerGetSteamID(player));
             }
+            SemiFunc.StatSyncAll();
 
             return false;
         }
